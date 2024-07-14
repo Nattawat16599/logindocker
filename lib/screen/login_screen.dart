@@ -1,4 +1,4 @@
-import 'package:cmru_application/services/auth_service.dart';
+
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -13,6 +13,8 @@ class _LoginScreenState extends State<LoginScreen> {
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   final _email = TextEditingController();
   final _password = TextEditingController();
+  
+  get AuthService => null;
 
   @override
   void initState() {
